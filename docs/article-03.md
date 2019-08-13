@@ -1,0 +1,110 @@
+## 1.排序法
+思路：给数组先排序(由大到小排序),第一项就是最大值
+```javascript
+let arr = [1,5,6,7,9,20,40,2,3];
+let max1 = arr.sort(function(a,b){
+    return b-a;
+})[0];
+console.log(max1);
+```
+## 2.假设法
+思路：假设第一个值是最大值,依次遍历数组中后面的每一项,和假设的值进行比较,如果比假设的值要大,把当前项赋值给MAX...
+```javascript
+let arr = [1,5,6,7,9,20,40,2,3];
+let max2 = arr[0];
+for(let i = 1; i <= arr.length; i++){
+    let item = arr[i];
+    item > max2 ? max2 = item : null;
+}
+console.log(max2);
+```
+## 3.基于Math.max与apply
+思路：基于基于Math.max完成和apply特性
+```javascript
+let arr = [1,5,6,7,9,20,40,2,3];
+console.log(Math.max.apply(null, arr));
+```
+这个是要重点理解的一个方案，call,apply,bind常常会被放一起比较
+首先，call，apply，bind这三个方法其实都是继承自Function.prototype中的，属于实例方法。
+三个方法的作用，都是**改变this的指向**，只是用法稍微有些区别
+### this
+什么是this
+
+**this 既不指向函数自身，也不指函数的词法作用域**。它在函数定义的时候是确定不了的,在函数被调用时才发生的绑定，也就是说`this具体指向什么，取决于你是怎么调用的函数`。
+
+怎么判断this
+> 1.给当前元素的某个事件绑定方法, 当事件触发方法执行的时候，方法中的THIS是当前操作的元素对象
+2.普通函数执行，函数中的THIS取决于执行的主体，谁执行的，THIS就是谁（执行主体：方法执行，看方法名前面是否有“点”，有的话，点前面是谁this就是谁，没有this是window）
+下面看个例子：
+```javascript
+function myFunction(){
+    console.log(this===window);
+}    
+var obj = {
+    myFunction(){
+        console.log(this===obj);
+    }
+}
+myFunction();//true
+obj.myFunction();//true
+```
+对this有了大致了解后，再来看call方法
+```javascript
+window.name = 'windowName';
+let fn = function(){
+    console.log(this.name);
+}
+let obj = {
+    name:'objName'
+}
+let obj1 = {
+    name:'obj1Name'
+}
+fn();//windowName
+fn.call(obj);//objName：虽然是fn调用，但call改变了this指向，this的指向是obj,故obj.name的值为objName
+fn.call(obj1);//obj1Name
+```
+call方法执行的时候，内部处理了一些事情。首先把要操作函数中的this关键字变为call方法第一个传递的实参值,把call方法第二个及第二个以后的实参获取到，把要操作的函数执行，并且把第二个以后的传递进来的实参传给函数
+```javascript
+function fn(a, b) {
+   console.log(a + b);
+}
+fn.call(null, 1, 2); //3
+```
+CALL中的细节
+>  
+1.非严格模式下，如果参数不传，或者第一个传递的是null/undefined，this都指向window
+2.在严格模式下，第一个参数是谁，this就指向谁（包括null/undefined），不传this是undefined
+在上述代码中，如果用apply，则是
+```javascript
+function fn(a, b) {
+   console.log(a + b);
+}
+fn.apply(null, [1, 2]); //3
+```
+apply：和call基本上一模一样，唯一区别在于**传参方式**
+```javascript
+fn.call(obj,10,20)
+fn.apply(obj,[10,20]) //APPLY把需要传递给FN的参数放到一个数组（或者类数组）中传递进去，虽然写的是一个数组，但是也相当于给FN一个个的传递
+```
+bind：语法和call一模一样，唯一的区别在于立即执行还是等待执行
+```javascript
+fn.call(obj,10,20) 改变FN中的THIS,并且把FN立即执行
+fn.bind(obj,10,20) 改变FN中的THIS,此时的FN并没有执行（不兼容IE6~8）
+```
+bind调用之后是返回原函数，需要再调用一次才行
+
+----------
+回到原题，求数组最大值
+Math.max(arr)这样肯定是报错的
+```javascript
+console.log(Math.max(ary));//=>NaN 
+//=>Math.max是获取一堆数中的最大值,需要我们把比较的数,一个个的传递给这个方法 //=>Math.max(12,13,14...) =>Math.max([12,13,14...])这样只是传递一个值
+Math.max.apply(null,arr);
+//=>利用了apply的一个特征：虽然放的是一个数组，但是执行方法的时候，也是把数组中的每一项一个个的传递给函数
+```
+
+## 4.ES6展开运算符
+```javascript
+console.log(Math.max(...arr));
+```
