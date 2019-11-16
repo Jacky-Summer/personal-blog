@@ -80,4 +80,5 @@ css文件
     background-image: url(../img/point-green.png);
 }
 ```
-效果如下：![1573913526\(1\).jpg](/img/bVbAprI)
+效果图如下：
+![](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6/swiper-pagination.jpg)
