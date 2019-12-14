@@ -23,7 +23,6 @@
 - 关键的css
 ```css
 html,body{
-    width: 100%;
     height: 100%;
 }
 .wrapper{
@@ -39,7 +38,7 @@ footer{
 }
 ```
 
-如上代码，主要内容区和footer区必须为并列关系。设置main-container为border-box，即元素的内边距和边框都在已设定的高度内绘制，我们设置了min-height为100%，即最小高度是铺满整屏幕。padding-bottom在border-box盒子中，留出高度40px的空白块。footer的margin-top为-40px（如果footer有设置高度，padding-bottom的值应以footer高度为准），即向上拉到空白块内，min-container最小高度为整个屏幕，故页面内容不足也可以显示在底部。
+如上代码，主要内容区和footer区必须为并列关系。设置main-container为border-box，即元素的内边距和边框都在已设定的高度内绘制，我们设置了min-height为100%，即最小高度是铺满整屏幕。padding-bottom在border-box盒子中，留出高度40px的空白块。footer的margin-top为-40px（如果footer有设置高度，padding-bottom的值应以footer高度为准），即向上拉到空白块内，main-container最小高度为整个屏幕，故页面内容不足也可以显示在底部。
 
 ## 方法二
 
@@ -54,9 +53,8 @@ footer{
 ```
 
 关键的css
-```
+```css
 html,body{
-    width: 100%;
     height: 100%;
 }
 .wrapper{
