@@ -18,7 +18,7 @@
 解决办法：
 ```css
 .wrapper >>> .swiper-pagination-bullet-active
-    background: #fff
+    background: #ff0
 ```
     .wrapper >>> .swiper-pagination-bullet-active
     表示的是在wrapper下所有出现.swiper-pagination-bullet-active
