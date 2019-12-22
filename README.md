@@ -36,6 +36,7 @@
 ### 插件系列
 
 1. [swiper自定义分页器](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/%E6%8F%92%E4%BB%B6%E7%B3%BB%E5%88%97/swiper%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%86%E9%A1%B5%E5%99%A8.md)
+2. [vue-awesome-swiper修改轮播图pagination的颜色](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/%E6%8F%92%E4%BB%B6%E7%B3%BB%E5%88%97/vue-awesome-swiper%E4%BF%AE%E6%94%B9%E8%BD%AE%E6%92%AD%E5%9B%BEpagination%E7%9A%84%E9%A2%9C%E8%89%B2.md)
 
 ## jQuery系列
 
