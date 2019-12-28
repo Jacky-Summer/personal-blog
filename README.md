@@ -19,6 +19,7 @@
 4. [深入理解JavaScript之由一道题思考闭包](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8B%E7%94%B1%E4%B8%80%E9%81%93%E9%A2%98%E6%80%9D%E8%80%83%E9%97%AD%E5%8C%85.md)
 5. [深入理解JavaScript之实现继承的7种方式](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8B%E5%AE%9E%E7%8E%B0%E7%BB%A7%E6%89%BF%E7%9A%847%E7%A7%8D%E6%96%B9%E5%BC%8F.md)
 
+
 ## 常用方法总结
 
 1. [获取数组中的最大值方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC%E6%96%B9%E6%B3%95.md)
@@ -37,6 +38,7 @@
 
 1. [swiper自定义分页器](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/%E6%8F%92%E4%BB%B6%E7%B3%BB%E5%88%97/swiper%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%86%E9%A1%B5%E5%99%A8.md)
 2. [vue-awesome-swiper修改轮播图pagination的颜色](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/%E6%8F%92%E4%BB%B6%E7%B3%BB%E5%88%97/vue-awesome-swiper%E4%BF%AE%E6%94%B9%E8%BD%AE%E6%92%AD%E5%9B%BEpagination%E7%9A%84%E9%A2%9C%E8%89%B2.md)
+3. [swiper父级元素处于隐藏状态滚动效果失效问题](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/%E6%8F%92%E4%BB%B6%E7%B3%BB%E5%88%97/swiper%E7%88%B6%E7%BA%A7%E5%85%83%E7%B4%A0%E5%A4%84%E4%BA%8E%E9%9A%90%E8%97%8F%E7%8A%B6%E6%80%81%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98.md)
 
 ## jQuery系列
 
