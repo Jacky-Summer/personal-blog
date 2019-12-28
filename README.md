@@ -19,7 +19,9 @@
 4. [深入理解JavaScript之由一道题思考闭包](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8B%E7%94%B1%E4%B8%80%E9%81%93%E9%A2%98%E6%80%9D%E8%80%83%E9%97%AD%E5%8C%85.md)
 5. [深入理解JavaScript之实现继承的7种方式](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8B%E5%AE%9E%E7%8E%B0%E7%BB%A7%E6%89%BF%E7%9A%847%E7%A7%8D%E6%96%B9%E5%BC%8F.md)
 
+## ES6系列
 
+1. [ES6系列之let和const与var的区别](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8Blet%E5%92%8Cconst%E4%B8%8Evar%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 ## 常用方法总结
 
 1. [获取数组中的最大值方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC%E6%96%B9%E6%B3%95.md)
