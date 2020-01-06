@@ -23,6 +23,8 @@
 
 1. [ES6系列之let和const与var的区别](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8Blet%E5%92%8Cconst%E4%B8%8Evar%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 2. [ES6系列之变量的解构赋值](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E5%8F%98%E9%87%8F%E7%9A%84%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC.md)
+3. [ES6系列之模板字符串](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2.md)
+
 ## 常用方法总结
 
 1. [获取数组中的最大值方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC%E6%96%B9%E6%B3%95.md)
