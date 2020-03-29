@@ -31,6 +31,10 @@
 4. [ES6系列之箭头函数全解析](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E5%85%A8%E8%A7%A3%E6%9E%90.md)
 5. [ES6系列之一文彻底弄懂Iterator](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%80%E6%96%87%E5%BD%BB%E5%BA%95%E5%BC%84%E6%87%82Iterator.md)
 
+## React系列
+
+1. [用React+Antd封装Axios实现全局Loading效果](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E7%94%A8React%2BAntd%E5%B0%81%E8%A3%85Axios%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80Loading%E6%95%88%E6%9E%9C.md)
+
 ## 常用方法总结
 
 1. [获取数组中的最大值方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC%E6%96%B9%E6%B3%95.md)
