@@ -15,7 +15,7 @@
 ## 代码说明
 
 1. 通过 axios 提供的请求拦截和响应拦截的接口，控制 loading 的显示或者隐藏。在此我还设置了没有网络和网络超时的提示信息
-2. 采用antd的Spin组件来实现loading效果，message组件来进行消息提示
+2. 采用antd的Spin组件来实现loading效果，message组件来进行消息提示（antd.css这里没有引入，是因为我设置了按需加载）
 3. 定义变量requestCount作为计数器，确保同一时刻如果有多个请求的话，不会同时添加多个 loading，而是只有1个，并在所有请求结束后才会隐藏 loading。
 4. 默认所有请求都会自动有 loading 效果。如果某个请求不需要 loading 效果，可以在请求 headers 中设置 isLoading 为false。
 
@@ -33,7 +33,7 @@ const Axios = axios.create({
 })
 
 // 设置post请求头
-Http.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8'
+Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8'
 
 // 当前正在请求的数量
 let requestCount = 0
@@ -58,7 +58,7 @@ function hideLoading () {
 }
 
 // 请求前拦截
-Http.interceptors.request.use(config => {
+Axios.interceptors.request.use(config => {
    // requestCount为0，才创建loading, 避免重复创建
     if (config.headers.isLoading !== false) {
         showLoading()
@@ -66,14 +66,14 @@ Http.interceptors.request.use(config => {
     return config
 }, err => {
     // 判断当前请求是否设置了不显示Loading
-    if (config.headers.isLoading !== false) {
+    if (err.config.headers.isLoading !== false) {
         hideLoading()
     }
     return Promise.reject(err)
 })
 
 // 返回后拦截
-Http.interceptors.response.use(res => {
+Axios.interceptors.response.use(res => {
     // 判断当前请求是否设置了不显示Loading
     if (res.config.headers.isLoading !== false) {
         hideLoading()
@@ -93,7 +93,7 @@ Http.interceptors.response.use(res => {
 })
 
 // 把组件引入，并定义成原型属性方便使用
-Component.prototype.$axios = Http
+Component.prototype.$axios = Axios
 
 export default Axios
 ```
