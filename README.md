@@ -40,7 +40,8 @@
 
 ## 日常总结
 
-1. [获取数组中的最大值方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC%E6%96%B9%E6%B3%95.md)
+1. [获取数组中的最大值方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC%E6%96%B9%E6%B3%95.md)
+2. [原生JavaScript DOM操作常见汇总](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%8E%9F%E7%94%9FJavaScript%20DOM%E6%93%8D%E4%BD%9C%E5%B8%B8%E8%A7%81%E6%B1%87%E6%80%BB.md)
 
 ## CSS系列
 
