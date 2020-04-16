@@ -1,165 +1,245 @@
 # React函数this绑定的原因及四种绑定方式对比
 
-## 前言
+react组件在绑定函数时，通常有三种方法，此文将对三种方法性能和写法展开写...
 
-最近在看JS性能优化方面，说到了createDocumentFragment()方法，对该方法有印象，但为了进一步了解，我还是重新查阅一遍，顺便把DOM操作也给总结一下。
+## 为什么要绑定this
+首先，第一个很重要的问题就是，绑定this是什么原因？
 
-## 创建新节点
+js里面的this绑定是代码执行的时候进行绑定的，而不是编写的时候，所以this的指向取决于函数调用时的各种条件。
 
-- **createDocumentFragment()方法**
-
-该方法是用来创建一个虚拟的节点对象，或者说，是用来创建文档碎片节点。它可以包含各种类型的节点，在创建之初是空的。
-
-DocumentFragment 不是真实 DOM 树的一部分，它的变化不会触发 DOM 树的重新渲染，且不会导致性能等问题。
-
-当把一个DocumentFragment节点插入文档树时，插入的不是DocumentFragment自身，而是它的所有子孙节点，即插入的是括号里的节点。这个特性使得DocumentFragment成了占位符，暂时存放那些一次插入文档的节点。
-
-- **createElement()方法**
-
-在 HTML 文档中，document.createElement() 方法用于创建一个由标签名称 tagName 指定的 HTML 元素
-
-来看一个例子, 对于页面已存在的```<ul id="ul"></ul>```元素，我们想往里面添加li标签
 ```javascript
-var ul = document.getElementById("ul");
-for (var i = 0; i < 50; i++) {
-    var li = document.createElement("li");
-    li.innerHTML = "index: " + i;
-    ul.appendChild(li);
+import React, { Component } from 'react';
+
+class BindEvent extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: 'jacky'
+        }
+    }
+    handleClick() {
+        console.log(this.state.name)
+    }
+    render() {
+        return (
+            <div>
+                <button onClick={this.handleClick}>Click</button>
+            </div>
+        );
+    }
+}
+
+export default BindEvent;
+```
+来看上面这个例子，运行点击按钮，发现程序报错，即this指向不是所在类。由于类的方法默认不会绑定this，因此在调用的时候如果没有绑定，this的值将会是undefined。故我们需要手动绑定this
+```
+ Uncaught TypeError: Cannot read property 'state' of undefined
+```
+需要我们自己绑定this，其实这不是react的锅，本质原因是 JavaScript 的 this 机制问题
+
+## this机制
+来看下面一个例子：
+```javascript
+const obj = {
+    name: 'obj',
+    getName: function() {
+        console.log(this, this.name);
+    }
+};
+obj.getName(); // {name: "obj", getName: ƒ} "obj"
+```
+结果理所应当，使用`.`操作符调用函数obj.getName()，this指向的是obj对象，即obj对象是函数getName的调用者，但如果改成这样：
+```javascript
+const middleObj = obj.getName;
+middleObj(); // Window {...} ""
+```
+将getName函数引用赋值给middleObj变量，并使用这个新的函数引用去调用该函数时，打印出this为Window对象，关于this的指向，可简单粗暴理解为**this 永远指向最后调用它的那个对象**。
+
+如果没有显式调用一个函数，JS 的解释器就会把全局对象当作调用者，在浏览器则是Window对象为调用者。
+
+如果使用严格模式，那么没有显式的使用调用者的情况下，this指向undefined 。
+
+理解完上面，我们用类来作为参照：
+
+下面定义了一个类，类里的display访问this.name属性
+```javascript
+class Foo {
+    constructor(name) {
+        this.name = name
+    }
+    display() {
+        console.log(this); // 运行打印： Foo {name: "jacky"}
+        console.log(this.name);
+    }
+}
+
+let foo = new Foo('jacky');
+foo.display(); // jacky
+
+let display = foo.display; 
+display();  
+// undefined
+// Uncaught TypeError: Cannot read property 'name' of undefined
+```
+当我们将一个函数引用赋值给某个其他变量，并使用这个新的函数引用去调用该函数时，在 display() 方法this为`undefined`，故找不到name值报错。
+
+在这里又有一个问题了，display这样直接调用，在非严格模式下调用者不是应该为Window对象吗？在这里，要知道一个知识点：
+
+**ES6 的 class 语法，所有在 class 中声明的方法都会自动地使用严格模式**
+
+## React的JSX
+
+说了这么多，这跟React那个有什么联系呢，想搞清楚为什么绑定this这个问题前，就想先弄明白JSX到底是一个什么东西。
+> 本质上来讲，JSX 只是为 React.createElement(component, props, ...children) 方法提供的语法糖。
+
+```javascript
+<button className="btn" onClick={this.handleClick}>
+    Click Me
+</button>
+```
+经babel编译为：
+```javascript
+React.createElement(
+    "button", 
+    { className: "btn", onClick: this.handleClick }, 
+    "Click Me"
+);
+```
+我们把render方法里的JSX手动写成编译后这种形式：
+```javascript
+class Example extends React.Component {
+    constructor(props){
+        super(props);
+    }
+    
+    handleClick(e) {
+        console.log(e);
+    }
+    
+    render(){
+        return React.createElement(
+            "button", 
+            { className: "btn", onClick: this.handleClick }, 
+            "Click Me"
+        );
+    }
 }
 ```
-上面操作看起来很正常，但实际要很多的插入操作和改动；而每一次的插入都会引起重新渲染，该操作会引发多次渲染，在性能优化方面，有一点是减少DOM操作，因为DOM操作导致了页面的重绘或重排。
 
-- createDocumentFragment()方法和createElement()方法区别
+React.createElement的第二个参数，传入的是一个对象，而这个对象里面有属性的值是取this 对象里面的属性 ，当这个对象放入React.createElement执行后，去取这个this.handleClick属性的时候，this已经不是我们在书写的时候认为的绑定在Example组件上了。this.handleClick这里的this会默认绑定，但是又是在ES6的class中，所以this绑定了undefined。
 
-如果是用createDocumentFragment()方法操作
-```javascript
-var ul = document.getElementById("ul");
-var fragment = document.createDocumentFragment();
-for (var i = 0; i < 50; i++) {
-    var li = document.createElement("li");
-    li.innerHTML = "index: " + i;
-    fragment.appendChild(li);
+ 在JSX语法中: `onClick={ this.handleClick }`中onClick这个属性就是相当于上面的"中间变量"。
+ 
+ 即是将`this.handleClick`函数赋值给onClick这个中间变量，后面不仅要进行JSX语法转化,将JSX组件转换成**JS对象**,还要再将Javascript对象转换成真实DOM。把onClick作为中间变量,指向一个函数的时候,后面的一系列处理中，使用onClick这个中间变量所指向的函数，里面的this自然就丢失掉了，不是再指向组件实例了。
+ 
+ 所以，当在组件定义方法想访问this，才需要手动绑定。
+ 
+ ## 绑定this的方法
+ 
+ ### render方法中绑定this
+ 
+ ```javascript
+ class BindEvent extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: 'jacky'
+        }
+    }
+    handleClick () {
+        console.log(this.state.name)
+    }
+    render() {
+        return (
+            <div>
+                <button onClick={this.handleClick.bind(this)}>点击</button>
+            </div>
+        );
+    }
 }
-ul.appendChild(fragment);
-```
+ ```
+这种方法即是在事件函数后使用`.bind(this)`将this绑定到当前组件中。因为 bind 函数会返回一个新的函数，所以每次父组件刷新时，都会重新生成一个函数，即使父组件传递给子组件其他的 props 值不变，子组件每次都会刷新，这将会影响性能，故不推荐使用。
 
-相比createElement()方法，这次是先将这些元素添加到fragment中，再统一将fragment添加到页面，会减少页面渲染dom的次数，效率会明显提升。因为fragment文档片段存在于内存中，并不在DOM中，所以将子元素插入到文档片段中时不会引起页面回流（新创建的fragment片段在文档内是没有对应的标签的，这里添加的是片段的所有子节点）
-
-- createTextNode()方法
-
-该方法会创建一个文本节点。
-
-HTML元素通常是由元素节点和文本节点组成。创建一个标题 (h1), 你必须创建 "h1" 元素和文本节点:
-```javascript
-var h = document.createElement("h1")
-var t = document.createTextNode("Hello World");
-h.appendChild(t);
-```
-
-## DOM更改：添加、移除、替换、插入 
-
-```javascript
-// 添加、删除子元素
-ele.appendChild(el);
-ele.removeChild(el);
-
-// 替换子元素
-ele.replaceChild(el1, el2);
-
-// 插入子元素
-parentElement.insertBefore(newElement, referenceElement);
-```
-前面三个用法就一目了然，对于insertBefore()方法来举个例子：
-```html
-<ul id="ul">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-</ul>
-```
-```javascript
-var newEle = document.createElement('li');
-var textNode = document.createTextNode('insertNode');
-newEle.appendChild(textNode);
-
-var ul = document.getElementById('ul');
-ul.insertBefore(newEle, ul.firstChild);
-```
-页面输出：
-```
-insertNode
-1
-2
-3
-```
-
-## DOM查询
-元素查询的API返回的的结果是DOM节点或者DOM节点的列表
-```javascript
-getElementById()  
-getElementsByName()  
-getElementsByTagName()
-getElementsByClassName()
-querySelector()
-querySelectorAll() 
-```
-
-querySelector() 方法返回匹配指定 CSS 选择器元素的第一个子元素， 该方法只返回匹配指定选择器的第一个元素。如果要返回所有匹配元素，需要使用 querySelectorAll() 方法替代．
-```javascipt
-document.querySelector("#test"); // 获取到id名为test的首个元素
-```
-- querySelector系列方法与getElementBy系列方法对比
-1. 得到的元素不是需要很麻烦的多次getElementBy..的话，尽量使用getElementBy系列方法,因为getElementBy系列执行速度更快。
-2. 得到的元素需要很麻烦的多次getElementBy...组合才能得到的话使用querySelector，方便。
-3. querySelector()选择的标签是静态的，也就是说在选中之后，能够一直保存，也就是脱离了被选择的成为副本。而getelementsBy系列方法是动态的，相互映射，在调用时，变化可以及时的反映在页面上。
-```javascript
-// 用 querySelector 操作元素
-var ul = document.querySelector('ul');
-var list = ul.querySelectorAll('li');
-for (var i = 0; i < 3; i++) { // 创建3个新的li标签，添加到ul列表中
-    ul.appendChild(document.createElement('li'));
+ ### render方法中使用箭头函数
+ 
+ ```javascript
+ class BindEvent extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: 'jacky'
+        }
+    }
+    handleClick () {
+        console.log(this.state.name)
+    }
+    render() {
+        return (
+            <div>
+                <button onClick={() => this.handleClick()}>点击</button>
+            </div>
+        );
+    }
 }
-console.log(list.length); // 3  
-// 输出的是添加前li的数量3，而非此时li的总数量6
-```
-```javascript
-var ul = document.getElementsByTagName('ul')[0];
-var list = ul.getElementsByTagName('li');
-for (var i = 0; i < 3; i++) { // 创建3个新的li标签，添加到ul列表中
-    ul.appendChild(document.createElement('li'));
+ ```
+首选要明确一点，**箭头函数中，this 永远绑定了定义箭头函数所在的那个对象**
+
+这种方法写法比较简洁， 最大好处就是传参很灵活，父组件刷新的时候，即使两个箭头函数的函数体是一样的，都会生成一个新的箭头函数。这种方式重新创建函数性能的损耗小于第1种。
+
+ ### 构造函数绑定this
+ 
+ ```javascript
+class BindEvent extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: 'jacky'
+        }
+        this.handleClick = this.handleClick.bind(this)
+    }
+    handleClick () {
+        console.log(this.state.name)
+    }
+    render() {
+        return (
+            <div>
+                <button onClick={this.handleClick}>点击</button> 
+            </div>
+        );
+    }
 }
-console.log(list.length); // 6
-```
+ ```
+ 为了避免在render中绑定this引发可能的性能问题，可以在constructor中预先进行绑定。好处是仅需要绑定一次，避免每次渲染时都要重新绑定，也是常推荐的写法，就是写起来繁琐一点，要单独绑定。
+ 
+  ### 在定义阶段使用箭头函数绑定
+  
+  ```javascript
+  class BindEvent extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: 'jacky'
+        }
+    }
+    handleClick = () => {
+        console.log(this.state.name)
+    }
+    render() {
+        return (
+            <div>
+                <button onClick={this.handleClick}>点击</button> 
+            </div>
+        );
+    }
+}
+  ```
+  
+这种写法是ES7的写法，ES6并不支持，不过我们可以配置你的开发环境支持ES7。
 
-- 还有元素的DOM导航方法：
-```javascript
-// 获取父元素、父节点
-var parent = ele.parentElement;
-var parent = ele.parentNode;
+这种方法避免了第1种和第2种的可能潜在的性能问题，也比第3种方法简洁，也是常推荐的写法。
 
-// 获取子节点，子节点可以是任何一种节点，可以通过nodeType来判断
-var nodes = ele.children;    
+至于哪一种是最好的写法，目前还真的无法定论，有待以后开发中得出最佳实践...
 
-// 查询子元素
-var els = ele.getElementsByTagName('li');
-var els = ele.getElementsByClassName('test');
-
-// 当前元素的第一个/最后一个子元素节点
-var el = ele.firstElementChild;
-var el = ele.lastElementChild;
-
-// 下一个/上一个兄弟元素节点
-var el = ele.nextElementSibling;
-var el = ele.previousElementSibling;
-```
-## 属性操作
-
-```
-getAttribute(key)
-setAttribute(key,value)
-hasAttribute(key)
-removeAttribute(key)  
-```
 <br>
 
 - ps： [个人技术博文Github仓库](https://github.com/Jacky-Summer/personal-blog)，欢迎star
