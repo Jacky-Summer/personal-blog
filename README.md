@@ -37,6 +37,7 @@
 ## React系列
 
 1. [用React+Antd封装Axios实现全局Loading效果](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E7%94%A8React%2BAntd%E5%B0%81%E8%A3%85Axios%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80Loading%E6%95%88%E6%9E%9C.md)
+2. [React函数this绑定的原因及四种绑定方式对比](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/React%E5%87%BD%E6%95%B0this%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E5%9B%9B%E7%A7%8D%E7%BB%91%E5%AE%9A%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94.md)
 
 ## 日常总结
 
