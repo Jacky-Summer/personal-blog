@@ -42,6 +42,7 @@
 4. [实现一个迷你 Redux（基础版）](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E8%BF%B7%E4%BD%A0Redux%EF%BC%88%E5%9F%BA%E7%A1%80%E7%89%88%EF%BC%89.md)
 5. [实现一个 Redux（完善版）](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AARedux%EF%BC%88%E5%AE%8C%E5%96%84%E7%89%88%EF%BC%89.md)
 6. [带你实现 react-redux](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E5%B8%A6%E4%BD%A0%E5%AE%9E%E7%8E%B0%20react-redux.md)
+7. [理解 redux-thunk 源码](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E7%90%86%E8%A7%A3%20redux-thunk%20%E6%BA%90%E7%A0%81.md)
 
 ## 日常总结
 
