@@ -46,7 +46,7 @@
 
 ## React 原理
 
-1.[React 原理之实现 createElement 和 render 方法](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E5%8E%9F%E7%90%86/React%20%E5%8E%9F%E7%90%86%E4%B9%8B%E5%AE%9E%E7%8E%B0%20createElement%20%E5%92%8C%20render%20%E6%96%B9%E6%B3%95.md)
+1. [React 原理之实现 createElement 和 render 方法](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E5%8E%9F%E7%90%86/React%20%E5%8E%9F%E7%90%86%E4%B9%8B%E5%AE%9E%E7%8E%B0%20createElement%20%E5%92%8C%20render%20%E6%96%B9%E6%B3%95.md)
 
 ## 日常总结
 
