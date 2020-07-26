@@ -135,7 +135,7 @@ export const post = (url, params = {}, isNeedToken = false) => {
 ```
 
 接下来改造 request.js中axios的响应拦截器
-```
+```javascript
 instance.interceptors.response.use(response => {
     return response
 }, error => {
@@ -178,7 +178,7 @@ instance.interceptors.response.use(response => {
     if (!error.response) {
         return Promise.reject(error)
     }
-    if (error.response.status === 401) {
+    if (error.response.status === 401 && !error.config.url.includes('/auth/refresh')) {
         const { config } = error
         if (!isRefreshing) {
             isRefreshing = true
@@ -217,7 +217,7 @@ instance.interceptors.response.use(response => {
     if (!error.response) {
         return Promise.reject(error)
     }
-    if (error.response.status === 401) {
+    if (error.response.status === 401 && !error.config.url.includes('/auth/refresh')) {
         const { config } = error
         if (!isRefreshing) {
             isRefreshing = true
@@ -278,7 +278,7 @@ instance.interceptors.response.use(response => {
     if (!error.response) {
         return Promise.reject(error)
     }
-    if (error.response.status === 401) {
+    if (error.response.status === 401 && !error.config.url.includes('/auth/refresh')) {
         const { config } = error
         if (!isRefreshing) {
             isRefreshing = true
