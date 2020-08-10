@@ -61,6 +61,7 @@
 2. [自定义 checkbox 样式](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/%E8%87%AA%E5%AE%9A%E4%B9%89checkbox%E6%A0%B7%E5%BC%8F.md)
 3. [一文汇总 CSS 两列布局和三列布局](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/%E4%B8%80%E6%96%87%E6%B1%87%E6%80%BB%20CSS%20%E4%B8%A4%E5%88%97%E5%B8%83%E5%B1%80%E5%92%8C%E4%B8%89%E5%88%97%E5%B8%83%E5%B1%80.md)
 4. [完全搞懂 BFC](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/%E5%AE%8C%E5%85%A8%E6%90%9E%E6%87%82%20BFC.md)
+5. [CSS 水平垂直居中回顾总结](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/CSS%20%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E5%9B%9E%E9%A1%BE%E6%80%BB%E7%BB%93.md)
 
 ## 开发遇到的小问题合集
 
