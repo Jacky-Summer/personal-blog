@@ -2,7 +2,7 @@
 
 ## 问题
 
-在使用 React 绑定 input 输入框的 onChange 方法时，如果使用中文输入法（或者其他输入法），会出现一个问题：还在输入拼音的时候，onChange 方法已经触发了，如下，即输入过程就已经触发了多次 onChange 方法。如果 onChage 方法有较为复杂的逻辑，就可能会带来一些用户体验或者逻辑的问题。
+在使用 React 绑定 input 输入框的 onChange 方法时，如果使用中文输入法（或者其他输入法），会出现一个问题：还在输入拼音的时候，onChange 方法已经触发了，如下，即输入过程就已经触发了多次 onChange 方法。如果 onChange 方法有较为复杂的逻辑，就可能会带来一些用户体验或者逻辑的问题。
 
 ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/26ab509fe10d46bc97f80ee6f8728336~tplv-k3u1fbpfcp-zoom-1.image)
 
