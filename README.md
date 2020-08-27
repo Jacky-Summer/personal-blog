@@ -8,7 +8,7 @@
 
 博客会持续更新，希望和你一起努力...
 
-## 专栏
+## 我的技术社区
 
 - [个人博客](https://jacky-summer.github.io/)
 - [掘金主页](https://juejin.im/user/5d77c17bf265da03c61e7c24)
