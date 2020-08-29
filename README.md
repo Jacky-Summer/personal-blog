@@ -88,6 +88,10 @@
 
 ## 后语
 
+如果觉得内容有帮助的话可以关注下我的公众号 「前端精神时光屋」一起成长，我会不定时地更新原创的技术文章和精选前端知识内容 🎉
+
+扫一扫下面的二维码 👇👇👇 即可关注：
+
 ![](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6/tencent-account.png)
 
 如果喜欢或者有所启发，欢迎 star，你的鼓励是我持续创作的动力 😊
