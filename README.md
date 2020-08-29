@@ -15,6 +15,7 @@
 - [个人博客](https://jacky-summer.github.io/)
 - [掘金主页](https://juejin.im/user/5d77c17bf265da03c61e7c24)
 - [segmentfault 主页](https://segmentfault.com/u/jackysummer/articles)
+- 微信公众号：前端精神时光屋
 
 ## 深入理解 JavaScript 系列目录
 
