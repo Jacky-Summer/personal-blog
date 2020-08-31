@@ -362,7 +362,7 @@ arrayObject.forEach(function(currentValue, index, arr), thisValue)
 
 ```javascript
 let arr = [1, 2, 4, 6, 8]
-arr.forEach((item) => {
+arr.forEach(item => {
   console.log(item) // 1 2 4 6 8
 })
 ```
@@ -399,11 +399,11 @@ arrayObject.every(function(currentValue, index, arr), thisValue)
 
 ```javascript
 let arr = [4, 6, 8, 10, 12]
-let res1 = arr.every((num) => {
+let res1 = arr.every(num => {
   // 检测数组中的所有元素是否大于2
   return num > 2
 })
-let res2 = arr.every((num) => {
+let res2 = arr.every(num => {
   // 检测数组中的所有元素是否大于10
   return num > 10
 })
@@ -431,11 +431,11 @@ arrayObject.some(function(currentValue, index, arr), thisValue)
 
 ```javascript
 let arr = [4, 6, 8, 10, 12]
-let res1 = arr.some((num) => {
+let res1 = arr.some(num => {
   // 检测数组中是否有一个元素是否大于10
   return num > 10
 })
-let res2 = arr.some((num) => {
+let res2 = arr.some(num => {
   // 检测数组中是否有一个元素是否大于100
   return num > 100
 })
@@ -459,11 +459,11 @@ arrayObject.filter(function(currentValue, index, arr), thisValue)
 
 ```javascript
 let arr = [4, 6, 8, 10, 12]
-let res1 = arr.filter((num) => {
+let res1 = arr.filter(num => {
   // 返回数组中所有大于5的元素
   return num > 5
 })
-let res2 = arr.filter((num) => {
+let res2 = arr.filter(num => {
   // 返回数组中所有小于5的元素
   return num < 5
 })
@@ -486,7 +486,7 @@ arrayObject.map(function(currentValue, index, arr), thisValue)
 
 ```javascript
 let arr = [4, 6, 8, 10, 12]
-let res = arr.map((num) => {
+let res = arr.map(num => {
   // 数组每个元素都乘10
   return num * 10
 })

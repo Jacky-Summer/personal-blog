@@ -1,11 +1,13 @@
-# 用React+Antd封装Axios实现全局Loading效果
+# 用 React+Antd 封装 Axios 实现全局 Loading 效果
 
 ## 前言
-今天在做react后台管理的时候要实现一个全局Loading效果，通常使用axios库与后端进行数据交互。为了更好的用户体验，在每次请求前添加一个加载效果，让用户知道在等待加载。
 
-要实现这个功能，我们可以在每个组件请求手动添加加载效果返回后再将其隐藏，但如果每个请求都这么做，就要做多次重复设置显得很麻烦，但好处是可以设置定制多种请求效果。但考虑到该项目场景为后台管理系统，给管理员使用，花样可以不用搞太多，统一优雅即可，故采取全局设置loading效果。
+今天在做 react 后台管理的时候要实现一个全局 Loading 效果，通常使用 axios 库与后端进行数据交互。为了更好的用户体验，在每次请求前添加一个加载效果，让用户知道在等待加载。
+
+要实现这个功能，我们可以在每个组件请求手动添加加载效果返回后再将其隐藏，但如果每个请求都这么做，就要做多次重复设置显得很麻烦，但好处是可以设置定制多种请求效果。但考虑到该项目场景为后台管理系统，给管理员使用，花样可以不用搞太多，统一优雅即可，故采取全局设置 loading 效果。
 
 ## 开发版本
+
 ```
 "react": "^16.13.1",
 "antd": "^4.0.4",
@@ -15,12 +17,14 @@
 ## 代码说明
 
 1. 通过 axios 提供的请求拦截和响应拦截的接口，控制 loading 的显示或者隐藏。在此我还设置了没有网络和网络超时的提示信息
-2. 采用antd的Spin组件来实现loading效果，message组件来进行消息提示（antd.css这里没有引入，是因为我设置了按需加载）
-3. 定义变量requestCount作为计数器，确保同一时刻如果有多个请求的话，不会同时添加多个 loading，而是只有1个，并在所有请求结束后才会隐藏 loading。
-4. 默认所有请求都会自动有 loading 效果。如果某个请求不需要 loading 效果，可以在请求 headers 中设置 isLoading 为false。
+2. 采用 antd 的 Spin 组件来实现 loading 效果，message 组件来进行消息提示（antd.css 这里没有引入，是因为我设置了按需加载）
+3. 定义变量 requestCount 作为计数器，确保同一时刻如果有多个请求的话，不会同时添加多个 loading，而是只有 1 个，并在所有请求结束后才会隐藏 loading。
+4. 默认所有请求都会自动有 loading 效果。如果某个请求不需要 loading 效果，可以在请求 headers 中设置 isLoading 为 false。
 
 ## 步骤
-1. 在src目录下新建一个文件axios.js
+
+1. 在 src 目录下新建一个文件 axios.js
+
 ```
 import axios from 'axios';
 import React, { Component } from 'react';
@@ -97,23 +101,27 @@ Component.prototype.$axios = Axios
 
 export default Axios
 ```
-2. 添加loading样式在共用的css文件里
+
+2. 添加 loading 样式在共用的 css 文件里
+
 ```css
 #loading {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  font-size: 20px;
 }
 ```
-3. axios请求
+
+3. axios 请求
+
 ```
 // 1. 引入自定义axios文件路径
 // 2. 引入共用css文件（loading样式）
@@ -126,7 +134,9 @@ componentDidMount () {
     })
 }
 ```
-不加loading效果，这样写
+
+不加 loading 效果，这样写
+
 ```
 axios({
   url: '/manage/statistic/base_count.do',
@@ -137,6 +147,7 @@ axios({
   this.setState(res.data)
 })
 ```
+
 ## 效果
 
 ![](https://user-gold-cdn.xitu.io/2020/3/29/17126d31a0fc0571?w=1854&h=954&f=gif&s=427836)

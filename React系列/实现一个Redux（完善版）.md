@@ -53,7 +53,7 @@ try {
 ```javascript
 const store = createStore(counter)
 const next = store.dispatch
-store.dispatch = (action) => {
+store.dispatch = action => {
   try {
     console.log('prev state', store.getState())
     console.log(action)
@@ -79,14 +79,14 @@ store.dispatch = (action) => {
 const store = createStore(counter)
 const next = store.dispatch
 
-const loggerMiddleware = (action) => {
+const loggerMiddleware = action => {
   console.log('prev state', store.getState())
   console.log(action)
   next(action)
   console.log('next state', store.getState())
 }
 
-store.dispatch = (action) => {
+store.dispatch = action => {
   try {
     loggerMiddleware(action)
   } catch (err) {
@@ -98,7 +98,7 @@ store.dispatch = (action) => {
 2. 把 exceptionMiddleware 提取出来
 
 ```javascript
-const exceptionMiddleware = (action) => {
+const exceptionMiddleware = action => {
   try {
     loggerMiddleware(action)
   } catch (err) {
@@ -112,7 +112,7 @@ store.dispatch = exceptionMiddleware
 3. 现在代码有个问题，就是 exceptionMiddleware 中间件写死 loggerMiddleware，但以后又万一不要记录功能呢，所以我们需要让 next(action) 变成动态的，即换哪个中间件都可以
 
 ```javascript
-const exceptionMiddleware = (next) => (action) => {
+const exceptionMiddleware = next => action => {
   try {
     // loggerMiddleware(action)
     next(action)
@@ -142,7 +142,7 @@ const exceptionMiddleware = function (next) {
 4. 同理，我们让 loggerMiddleware 里面无法扩展别的中间件了！我们也把 next 写成动态的
 
 ```javascript
-const loggerMiddleware = (next) => (action) => {
+const loggerMiddleware = next => action => {
   console.log('prev state', store.getState())
   console.log(action)
   next(action)
@@ -156,14 +156,14 @@ const loggerMiddleware = (next) => (action) => {
 const store = createStore(counter)
 const next = store.dispatch
 
-const loggerMiddleware = (next) => (action) => {
+const loggerMiddleware = next => action => {
   console.log('prev state', store.getState())
   console.log(action)
   next(action)
   console.log('next state', store.getState())
 }
 
-const exceptionMiddleware = (next) => (action) => {
+const exceptionMiddleware = next => action => {
   try {
     next(action)
   } catch (err) {
@@ -180,14 +180,14 @@ store.dispatch = exceptionMiddleware(loggerMiddleware(next))
 const store = createStore(counter)
 const next = store.dispatch
 
-const loggerMiddleware = (store) => (next) => (action) => {
+const loggerMiddleware = store => next => action => {
   console.log('prev state', store.getState())
   console.log(action)
   next(action)
   console.log('next state', store.getState())
 }
 
-const exceptionMiddleware = (store) => (next) => (action) => {
+const exceptionMiddleware = store => next => action => {
   try {
     next(action)
   } catch (err) {
@@ -203,7 +203,7 @@ store.dispatch = exception(logger(next))
 6. 如果又有一个新需求，需要在打印日志前输出当前时间戳，我们又需要构造一个中间件
 
 ```javascript
-const timeMiddleware = (store) => (next) => (action) => {
+const timeMiddleware = store => next => action => {
   console.log('time', new Date().getTime())
   next(action)
 }
@@ -221,7 +221,11 @@ store.dispatch = exception(time(logger(next)))
 
 ```javascript
 /* 接收旧的 createStore，返回新的 createStore */
-const newCreateStore = applyMiddleware(exceptionMiddleware, timeMiddleware, loggerMiddleware)(createStore)
+const newCreateStore = applyMiddleware(
+  exceptionMiddleware,
+  timeMiddleware,
+  loggerMiddleware
+)(createStore)
 
 /* 返回了一个 dispatch 被重写过的 store */
 const store = newCreateStore(reducer)
@@ -242,14 +246,14 @@ export const applyMiddleware = function (...middlewares) {
       // 只暴露 store 部分给中间件用的API，而不传入整个store
       const middlewareAPI = {
         getState: store.getState,
-        dispatch: (action) => store.dispatch(action),
+        dispatch: action => store.dispatch(action),
       }
       // 给每个中间件传入API
       // 相当于 const logger = loggerMiddleware(store)，即 const logger = loggerMiddleware({ getState, dispatch })
       // const chain = [exception, time, logger]
-      const chain = middlewares.map((middleware) => middleware(middlewareAPI))
+      const chain = middlewares.map(middleware => middleware(middlewareAPI))
       // 实现 exception(time((logger(dispatch))))
-      chain.reverse().map((middleware) => {
+      chain.reverse().map(middleware => {
         dispatch = middleware(dispatch)
       })
       // 重写dispatch
@@ -263,7 +267,7 @@ export const applyMiddleware = function (...middlewares) {
 我们来看这一处代码：
 
 ```javascript
-chain.reverse().map((middleware) => {
+chain.reverse().map(middleware => {
   dispatch = middleware(dispatch)
 })
 ```
@@ -274,7 +278,7 @@ chain.reverse().map((middleware) => {
 
 ```javascript
 export const applyMiddleware = (...middlewares) => {
-  return (createStore) => (...args) => {
+  return createStore => (...args) => {
     // ...
     dispatch = compose(...chain)(store.dispatch)
     // ...
@@ -286,7 +290,7 @@ export const applyMiddleware = (...middlewares) => {
 // 从右到左来组合多个函数: 从右到左把接收到的函数合成后的最终函数
 export const compose = (...funcs) => {
   if (funcs.length === 0) {
-    return (arg) => arg
+    return arg => arg
   }
   if (funcs.length === 1) {
     return funcs[0]
@@ -299,16 +303,16 @@ export const compose = (...funcs) => {
 
 ```javascript
 export const applyMiddleware = (...middlewares) => {
-  return (createStore) => (...args) => {
+  return createStore => (...args) => {
     const store = createStore(...args)
     let dispatch = store.dispatch
 
     const middlewareAPI = {
       getState: store.getState,
-      dispatch: (action) => dispatch(action),
+      dispatch: action => dispatch(action),
     }
 
-    const chain = middlewares.map((middleware) => middleware(middlewareAPI))
+    const chain = middlewares.map(middleware => middleware(middlewareAPI))
     dispatch = compose(...chain)(store.dispatch)
 
     return {
@@ -320,7 +324,7 @@ export const applyMiddleware = (...middlewares) => {
 
 export const compose = (...funcs) => {
   if (funcs.length === 0) {
-    return (arg) => arg
+    return arg => arg
   }
   if (funcs.length === 1) {
     return funcs[0]
@@ -338,7 +342,11 @@ export const compose = (...funcs) => {
 const store = createStore(counter)
 
 // 有中间件的 createStore
-const rewriteCreateStoreFunc = applyMiddleware(exceptionMiddleware, timeMiddleware, loggerMiddleware)
+const rewriteCreateStoreFunc = applyMiddleware(
+  exceptionMiddleware,
+  timeMiddleware,
+  loggerMiddleware
+)
 const newCreateStore = rewriteCreateStoreFunc(createStore)
 const store = newCreateStore(counter, preloadedState)
 ```
@@ -443,7 +451,11 @@ store.dispatch({ type: 'DECREMENT' })
 store.dispatch({ type: 'FULL_NAME' })
 
 // 执行完counter为：11，info为jacky lin
-console.log(`执行完counter为：${store.getState().counter.value}，info为${store.getState().info.name}`)
+console.log(
+  `执行完counter为：${store.getState().counter.value}，info为${
+    store.getState().info.name
+  }`
+)
 export default store
 ```
 
@@ -486,7 +498,7 @@ reducer 拆分后，和组件是一一对应的。我们就希望在做按需加
 ```javascript
 const createStore = function (reducer, initState) {
   // ...
-  const replaceReducer = (nextReducer) => {
+  const replaceReducer = nextReducer => {
     if (typeof nextReducer !== 'function') {
       throw new Error('Expected the nextReducer to be a function.')
     }
@@ -609,7 +621,7 @@ function addNumAction() {
 }
 // Demo.js：在需要用到 store 数据的组件，如 Demo 组件底部我们用 connect 函数连接，如下:
 import { addNumAction } from './actionCreators'
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   addNum() {
     dispatch(addNumAction())
   },
