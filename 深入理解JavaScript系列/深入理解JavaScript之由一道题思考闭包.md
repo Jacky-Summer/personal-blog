@@ -4,29 +4,29 @@
 
 > 闭包就是指有权访问另一个函数作用域中的变量的函数
 
-```javascript
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <title>点击li标签弹出对应数字</title>
-    </head>
-    <body>
+  </head>
+  <body>
     <ul>
-        <li>0</li>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+      <li>0</li>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
     </ul>
     <script>
-        var list = document.getElementsByTagName('li');
-        for(var i = 0;i < list.length;i++){
-         list[i].onclick = function(){
-             alert(i);
-         }
+      var list = document.getElementsByTagName('li');
+      for(var i = 0;i < list.length;i++){
+       list[i].onclick = function(){
+           alert(i);
+       }
     </script>
-    </body>
-    </html>
+  </body>
+</html>
 ```
 
 如上题，最为常见的一个例子，这里解释由这道题引出的 js 知识点，如上我们知道在浏览器运行无论点击哪个 li 标签都是弹出 3,首先来理解为什么会弹出 3。
