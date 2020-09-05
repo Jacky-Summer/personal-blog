@@ -877,3 +877,9 @@ extends: ['stylelint-config-prettier'],
 ## 结语
 
 写到这里就停了，当然要继续往下做的话还有很多，比如用 husky 代码提交，还有很多像 webpack 压缩分离 JS 和 CSS 等一些，这些留到以后写一篇 webpack 性能优化再来一起总结。
+
+[react-cli Github 地址](https://github.com/Jacky-Summer/react-cli)
+
+<br>
+
+- ps： [个人技术博文 Github 仓库](https://github.com/Jacky-Summer/personal-blog)，觉得不错的话欢迎 star，给我一点鼓励继续写作吧~
