@@ -27,7 +27,8 @@
 6. [深入理解 JavaScript 之作用域链与闭包](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8B%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE%E4%B8%8E%E9%97%AD%E5%8C%85.md)
 7. [深入理解 JavaScript 之 new 原理及模拟实现](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8B%20new%20%E5%8E%9F%E7%90%86%E5%8F%8A%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0.md)
 8. [深入理解 JavaScript 之实现继承的 7 种方式](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8B%E5%AE%9E%E7%8E%B0%E7%BB%A7%E6%89%BF%E7%9A%847%E7%A7%8D%E6%96%B9%E5%BC%8F.md)
-9. [深入理解之 JavaScript 之 call, apply, bind 方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E4%B9%8BJavaScript%E4%B9%8Bcall%2C%20apply%2C%20bind%E6%96%B9%E6%B3%95.md)
+9. [深入理解之 JavaScript 之 call, apply, bind 方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8Bcall%2C%20apply%2C%20bind%E6%96%B9%E6%B3%95.md)
+
 10. [深入理解 JavaScript 之事件循环(Event Loop)](<https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E4%B9%8B%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF(Event%20Loop).md>)
 
 ## ES6 系列
@@ -37,6 +38,7 @@
 3. [ES6 系列之模板字符串](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2.md)
 4. [ES6 系列之箭头函数全解析](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E5%85%A8%E8%A7%A3%E6%9E%90.md)
 5. [ES6 系列之一文彻底弄懂 Iterator](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%80%E6%96%87%E5%BD%BB%E5%BA%95%E5%BC%84%E6%87%82Iterator.md)
+6. [ES6 系列之 Promise 题合集](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8BPromise%E9%A2%98%E5%90%88%E9%9B%86.md)
 
 ## React 系列
 
