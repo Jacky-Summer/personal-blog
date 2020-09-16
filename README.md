@@ -38,7 +38,8 @@
 3. [ES6 系列之模板字符串](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2.md)
 4. [ES6 系列之箭头函数全解析](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E5%85%A8%E8%A7%A3%E6%9E%90.md)
 5. [ES6 系列之一文彻底弄懂 Iterator](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%80%E6%96%87%E5%BD%BB%E5%BA%95%E5%BC%84%E6%87%82Iterator.md)
-6. [ES6 系列之 Promise 题合集](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8BPromise%E9%A2%98%E5%90%88%E9%9B%86.md)
+6. [ES6 系列之 Generator 生成器全解析](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8BGenerator%E7%94%9F%E6%88%90%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90.md)
+7. [ES6 系列之 Promise 题合集](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8BPromise%E9%A2%98%E5%90%88%E9%9B%86.md)
 
 ## React 系列
 
