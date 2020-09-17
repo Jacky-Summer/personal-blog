@@ -28,7 +28,6 @@
 7. [深入理解 JavaScript 之 new 原理及模拟实现](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8B%20new%20%E5%8E%9F%E7%90%86%E5%8F%8A%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0.md)
 8. [深入理解 JavaScript 之实现继承的 7 种方式](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8B%E5%AE%9E%E7%8E%B0%E7%BB%A7%E6%89%BF%E7%9A%847%E7%A7%8D%E6%96%B9%E5%BC%8F.md)
 9. [深入理解之 JavaScript 之 call, apply, bind 方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E4%B9%8Bcall%2C%20apply%2C%20bind%E6%96%B9%E6%B3%95.md)
-
 10. [深入理解 JavaScript 之事件循环(Event Loop)](<https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E4%B9%8B%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF(Event%20Loop).md>)
 
 ## ES6 系列
@@ -76,6 +75,10 @@
 ## 前端工程化
 
 1. [由零开始使用 Webpack 来搭建 React 项目](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E7%94%B1%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8%20Webpack%20%E6%9D%A5%E6%90%AD%E5%BB%BA%20React%20%E9%A1%B9%E7%9B%AE.md)
+
+## 浏览器
+
+1. [搞懂浏览器渲染原理（重排与重绘）](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8/%E6%90%9E%E6%87%82%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86%EF%BC%88%E9%87%8D%E6%8E%92%E4%B8%8E%E9%87%8D%E7%BB%98%EF%BC%89.md)
 
 ## 开发遇到的小问题合集
 
