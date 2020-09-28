@@ -60,8 +60,9 @@
 1. [获取数组中的最大值方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC%E6%96%B9%E6%B3%95.md)
 2. [原生 JavaScript DOM 操作常见汇总](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%8E%9F%E7%94%9FJavaScript%20DOM%E6%93%8D%E4%BD%9C%E5%B8%B8%E8%A7%81%E6%B1%87%E6%80%BB.md)
 3. [总结 JavaScript 数组方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E6%80%BB%E7%BB%93JavaScript%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95.md)
-4. [前端跨域解决方案归纳整理](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%89%8D%E7%AB%AF%E8%B7%A8%E5%9F%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%BD%92%E7%BA%B3%E6%95%B4%E7%90%86.md)
-5. [基于 SSR/SSG + Gatsby 的前端 SEO 优化](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%9F%BA%E4%BA%8E%20SSR%E3%80%81SSG%E7%9A%84%E5%89%8D%E7%AB%AF%20SEO%20%E4%BC%98%E5%8C%96.md)
+4. [手写防抖与节流函数](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E6%89%8B%E5%86%99%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81%E5%87%BD%E6%95%B0.md)
+5. [前端跨域解决方案归纳整理](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%89%8D%E7%AB%AF%E8%B7%A8%E5%9F%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%BD%92%E7%BA%B3%E6%95%B4%E7%90%86.md)
+6. [基于 SSR/SSG + Gatsby 的前端 SEO 优化](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%9F%BA%E4%BA%8E%20SSR%E3%80%81SSG%E7%9A%84%E5%89%8D%E7%AB%AF%20SEO%20%E4%BC%98%E5%8C%96.md)
 
 ## CSS 系列
 
