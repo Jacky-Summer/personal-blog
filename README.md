@@ -55,6 +55,10 @@
 9. [手把手带你入门 Gatsby](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20Gatsby.md)
 10. [手把手带你入门 Next.js](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20NextJS.md)
 
+## Vue 系列
+
+1. [实现 Vue 中 EventBus 通信方式](https://github.com/Jacky-Summer/personal-blog/blob/master/Vue%E7%B3%BB%E5%88%97/%E5%AE%9E%E7%8E%B0Vue%E4%B8%ADEventBus%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F.md)
+
 ## 日常总结
 
 1. [获取数组中的最大值方法](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC%E6%96%B9%E6%B3%95.md)
