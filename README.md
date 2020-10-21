@@ -42,6 +42,10 @@
 7. [ES6 系列之 Promise 题合集](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8BPromise%E9%A2%98%E5%90%88%E9%9B%86.md)
 8. [ES6 系列之手写 Promise](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E6%89%8B%E5%86%99Promise.md)
 
+## TypeScript 系列
+
+1. [TypeScript 入门知识点总结](https://github.com/Jacky-Summer/personal-blog/blob/master/TypeScript%E7%B3%BB%E5%88%97/TypeScript%20%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93.md)
+
 ## React 系列
 
 1. [用 React+Antd 封装 Axios 实现全局 Loading 效果](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E7%94%A8React%2BAntd%E5%B0%81%E8%A3%85Axios%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80Loading%E6%95%88%E6%9E%9C.md)
