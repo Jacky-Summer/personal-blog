@@ -90,6 +90,7 @@
 2. [如何编写一个 Webpack Loader](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%20Webpack%20Loader.md)
 3. [如何编写一个 Webpack Plugin](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%20Webpack%20Plugin.md)
 4. [一文带你了解 Jest 单元测试](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%20Jest%20%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
+5. [手把手带你入门 Travis 自动化部署](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20Travis%20%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2.md)
 
 ## HTTP 系列
 
