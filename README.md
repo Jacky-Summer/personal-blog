@@ -95,6 +95,7 @@
 ## HTTP 系列
 
 1. [动手搞懂 HTTP 缓存机制](https://github.com/Jacky-Summer/personal-blog/blob/master/HTTP%E7%B3%BB%E5%88%97/%E5%8A%A8%E6%89%8B%E6%90%9E%E6%87%82%20HTTP%20%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6.md)
+2. [HTTP 和 HTTPS 协议](https://github.com/Jacky-Summer/personal-blog/blob/master/HTTP%E7%B3%BB%E5%88%97/HTTP%20%E5%92%8C%20HTTPS%20%E5%8D%8F%E8%AE%AE.md)
 
 ## 浏览器
 
