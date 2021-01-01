@@ -57,9 +57,10 @@
 7. [实现一个 Redux（完善版）](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AARedux%EF%BC%88%E5%AE%8C%E5%96%84%E7%89%88%EF%BC%89.md)
 8. [带你实现 react-redux](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E5%B8%A6%E4%BD%A0%E5%AE%9E%E7%8E%B0%20react-redux.md)
 9. [理解 redux-thunk 源码](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E7%90%86%E8%A7%A3%20redux-thunk%20%E6%BA%90%E7%A0%81.md)
-10. [手把手带你入门 Gatsby](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20Gatsby.md)
-11. [手把手带你入门 Next.js](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20NextJS.md)
-12. [谈谈对 React 新旧生命周期的理解](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E8%B0%88%E8%B0%88%E5%AF%B9%20React%20%E6%96%B0%E6%97%A7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E7%90%86%E8%A7%A3.md)
+10. [手写实现 MobX 的 observable 和 autorun 方法](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%89%8B%E5%86%99%E5%AE%9E%E7%8E%B0MobX%E7%9A%84observable%E5%92%8Cautorun%E6%96%B9%E6%B3%95.md)
+11. [手把手带你入门 Gatsby](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20Gatsby.md)
+12. [手把手带你入门 Next.js](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20NextJS.md)
+13. [谈谈对 React 新旧生命周期的理解](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E8%B0%88%E8%B0%88%E5%AF%B9%20React%20%E6%96%B0%E6%97%A7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E7%90%86%E8%A7%A3.md)
 
 ## Vue 系列
 
@@ -77,14 +78,6 @@
 6. [基于 SSR/SSG + Gatsby 的前端 SEO 优化](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%9F%BA%E4%BA%8E%20SSR%E3%80%81SSG%E7%9A%84%E5%89%8D%E7%AB%AF%20SEO%20%E4%BC%98%E5%8C%96.md)
 7. [escape、encodeURI、encodeURIComponent 区别](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/escape%E3%80%81encodeURI%E3%80%81encodeURIComponent%E5%8C%BA%E5%88%AB.md)
 8. [前端安全-XSS 和 CSRF](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8-XSS%E5%92%8CCSRF.md)
-
-## CSS 系列
-
-1. [页面内容不足铺满屏幕高度和有滚动条时，footer 始终保持底部显示](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/CSS%E7%B3%BB%E5%88%97/%E9%A1%B5%E9%9D%A2%E5%86%85%E5%AE%B9%E4%B8%8D%E8%B6%B3%E9%93%BA%E6%BB%A1%E5%B1%8F%E5%B9%95%E9%AB%98%E5%BA%A6%E5%92%8C%E6%9C%89%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%97%B6%EF%BC%8Cfooter%E5%A7%8B%E7%BB%88%E4%BF%9D%E6%8C%81%E5%BA%95%E9%83%A8%E6%98%BE%E7%A4%BA.md)
-2. [自定义 checkbox 样式](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/%E8%87%AA%E5%AE%9A%E4%B9%89checkbox%E6%A0%B7%E5%BC%8F.md)
-3. [一文汇总 CSS 两列布局和三列布局](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/%E4%B8%80%E6%96%87%E6%B1%87%E6%80%BB%20CSS%20%E4%B8%A4%E5%88%97%E5%B8%83%E5%B1%80%E5%92%8C%E4%B8%89%E5%88%97%E5%B8%83%E5%B1%80.md)
-4. [完全搞懂 BFC](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/%E5%AE%8C%E5%85%A8%E6%90%9E%E6%87%82%20BFC.md)
-5. [CSS 水平垂直居中回顾总结](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/CSS%20%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E5%9B%9E%E9%A1%BE%E6%80%BB%E7%BB%93.md)
 
 ## 前端工程化
 
@@ -104,6 +97,14 @@
 ## 浏览器
 
 1. [搞懂浏览器渲染原理（重排与重绘）](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8/%E6%90%9E%E6%87%82%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86%EF%BC%88%E9%87%8D%E6%8E%92%E4%B8%8E%E9%87%8D%E7%BB%98%EF%BC%89.md)
+
+## CSS 系列
+
+1. [页面内容不足铺满屏幕高度和有滚动条时，footer 始终保持底部显示](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/CSS%E7%B3%BB%E5%88%97/%E9%A1%B5%E9%9D%A2%E5%86%85%E5%AE%B9%E4%B8%8D%E8%B6%B3%E9%93%BA%E6%BB%A1%E5%B1%8F%E5%B9%95%E9%AB%98%E5%BA%A6%E5%92%8C%E6%9C%89%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%97%B6%EF%BC%8Cfooter%E5%A7%8B%E7%BB%88%E4%BF%9D%E6%8C%81%E5%BA%95%E9%83%A8%E6%98%BE%E7%A4%BA.md)
+2. [自定义 checkbox 样式](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/%E8%87%AA%E5%AE%9A%E4%B9%89checkbox%E6%A0%B7%E5%BC%8F.md)
+3. [一文汇总 CSS 两列布局和三列布局](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/%E4%B8%80%E6%96%87%E6%B1%87%E6%80%BB%20CSS%20%E4%B8%A4%E5%88%97%E5%B8%83%E5%B1%80%E5%92%8C%E4%B8%89%E5%88%97%E5%B8%83%E5%B1%80.md)
+4. [完全搞懂 BFC](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/%E5%AE%8C%E5%85%A8%E6%90%9E%E6%87%82%20BFC.md)
+5. [CSS 水平垂直居中回顾总结](https://github.com/Jacky-Summer/personal-blog/blob/master/CSS%E7%B3%BB%E5%88%97/CSS%20%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E5%9B%9E%E9%A1%BE%E6%80%BB%E7%BB%93.md)
 
 ## 开发遇到的小问题合集
 
