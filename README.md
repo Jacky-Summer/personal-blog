@@ -41,7 +41,7 @@
 6. [ES6 系列之 Generator 生成器全解析](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8BGenerator%E7%94%9F%E6%88%90%E5%99%A8%E5%85%A8%E8%A7%A3%E6%9E%90.md)
 7. [ES6 系列之 Promise 题合集](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8BPromise%E9%A2%98%E5%90%88%E9%9B%86.md)
 8. [ES6 系列之手写 Promise](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%E7%B3%BB%E5%88%97%E4%B9%8B%E6%89%8B%E5%86%99Promise.md)
-9. [ES6 系列之 Proxy](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%20%E7%B3%BB%E5%88%97%E4%B9%8BProxy)
+9. [ES6 系列之 Proxy](https://github.com/Jacky-Summer/personal-blog/blob/master/ES6%E7%B3%BB%E5%88%97/ES6%20%E7%B3%BB%E5%88%97%E4%B9%8BProxy.md)
 
 ## TypeScript 系列
 
