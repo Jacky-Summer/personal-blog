@@ -62,6 +62,7 @@
 11. [手把手带你入门 Gatsby](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20Gatsby.md)
 12. [手把手带你入门 Next.js](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20NextJS.md)
 13. [谈谈对 React 新旧生命周期的理解](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E8%B0%88%E8%B0%88%E5%AF%B9%20React%20%E6%96%B0%E6%97%A7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E7%90%86%E8%A7%A3.md)
+14. [深入 React 的 setState 机制](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%B7%B1%E5%85%A5%20React%20%E7%9A%84%20setState%20%E6%9C%BA%E5%88%B6.md)
 
 ## Vue 系列
 
