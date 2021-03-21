@@ -113,7 +113,7 @@ DataURL 使用于如下的场景
 - 访问外部资源受限
 - 图片体积小，占用一个 HTTP 会话资源浪费
 
-## hidden
+### hidden
 
 bundle 里不包含 sourcemap 的引用地址，这样浏览器开发者工具里看不到原始代码
 
