@@ -89,9 +89,10 @@
 1. [由零开始使用 Webpack 来搭建 React 项目](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E7%94%B1%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8%20Webpack%20%E6%9D%A5%E6%90%AD%E5%BB%BA%20React%20%E9%A1%B9%E7%9B%AE.md)
 2. [如何编写一个 Webpack Loader](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%20Webpack%20Loader.md)
 3. [如何编写一个 Webpack Plugin](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%20Webpack%20Plugin.md)
-4. [一文带你了解 Jest 单元测试](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%20Jest%20%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
-5. [手把手带你入门 Travis 自动化部署](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20Travis%20%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2.md)
-6. [搭建 Next.js + TS + Antd + Redux + Storybook 企业级项目脚手架](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%90%AD%E5%BB%BA%20Next.js%20%2B%20TS%20%2B%20Antd%20%2B%20Redux%20%2B%20Storybook%20%E4%BC%81%E4%B8%9A%E7%BA%A7%E9%A1%B9%E7%9B%AE%E8%84%9A%E6%89%8B%E6%9E%B6.md)
+4. [Webpack Sourcemap 回顾](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/Webpack%20Sourcemap%20%E5%9B%9E%E9%A1%BE.md)
+5. [一文带你了解 Jest 单元测试](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%20Jest%20%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
+6. [手把手带你入门 Travis 自动化部署](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20Travis%20%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2.md)
+7. [搭建 Next.js + TS + Antd + Redux + Storybook 企业级项目脚手架](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%90%AD%E5%BB%BA%20Next.js%20%2B%20TS%20%2B%20Antd%20%2B%20Redux%20%2B%20Storybook%20%E4%BC%81%E4%B8%9A%E7%BA%A7%E9%A1%B9%E7%9B%AE%E8%84%9A%E6%89%8B%E6%9E%B6.md)
 
 ## HTTP 系列
 
