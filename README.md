@@ -94,6 +94,10 @@
 6. [手把手带你入门 Travis 自动化部署](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8%20Travis%20%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2.md)
 7. [搭建 Next.js + TS + Antd + Redux + Storybook 企业级项目脚手架](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%90%AD%E5%BB%BA%20Next.js%20%2B%20TS%20%2B%20Antd%20%2B%20Redux%20%2B%20Storybook%20%E4%BC%81%E4%B8%9A%E7%BA%A7%E9%A1%B9%E7%9B%AE%E8%84%9A%E6%89%8B%E6%9E%B6.md)
 
+## 性能优化
+
+1. [Webpack 动态导入 react-toastify](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/Webpack%20%E5%8A%A8%E6%80%81%E5%AF%BC%E5%85%A5%20react-toastify.md)
+
 ## HTTP 系列
 
 1. [动手搞懂 HTTP 缓存机制](https://github.com/Jacky-Summer/personal-blog/blob/master/HTTP%E7%B3%BB%E5%88%97/%E5%8A%A8%E6%89%8B%E6%90%9E%E6%87%82%20HTTP%20%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6.md)
