@@ -47,6 +47,7 @@
 ## TypeScript 系列
 
 1. [TypeScript 入门知识点总结](https://github.com/Jacky-Summer/personal-blog/blob/master/TypeScript%E7%B3%BB%E5%88%97/TypeScript%20%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93.md)
+2. [TypeScript 进阶经验总结](https://github.com/Jacky-Summer/personal-blog/blob/master/TypeScript%E7%B3%BB%E5%88%97/TypeScript%20%E8%BF%9B%E9%98%B6%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93.md)
 
 ## React 系列
 
