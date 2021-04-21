@@ -108,7 +108,7 @@ let animal: Partial<Animal> = {
 }
 ```
 
-### ReadOnly
+### Readonly
 
 它接收一个泛型 T，用来把它的所有属性标记为只读类型
 
@@ -237,7 +237,7 @@ type ExcludeKeys = Exclude<keyof Programmer, keyof Student>
 type Omit<T, K extends keyof any> = Pick<T, Exclude<keyof T, K>>
 ```
 
-作用于 Pick 相反，还是直接看代码容易理解
+作用与 Pick 相反，还是直接看代码容易理解
 
 ```ts
 interface Animal {
