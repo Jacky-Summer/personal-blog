@@ -85,6 +85,7 @@
 6. [基于 SSR/SSG + Gatsby 的前端 SEO 优化](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%9F%BA%E4%BA%8E%20SSR%E3%80%81SSG%E7%9A%84%E5%89%8D%E7%AB%AF%20SEO%20%E4%BC%98%E5%8C%96.md)
 7. [escape、encodeURI、encodeURIComponent 区别](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/escape%E3%80%81encodeURI%E3%80%81encodeURIComponent%E5%8C%BA%E5%88%AB.md)
 8. [前端安全-XSS 和 CSRF](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8-XSS%E5%92%8CCSRF.md)
+9. [原生 MediaRecorder API 录屏学习记录](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/%E5%8E%9F%E7%94%9F%20MediaRecorder%20API%20%E5%BD%95%E5%B1%8F%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md)
 
 ## 前端工程化
 
