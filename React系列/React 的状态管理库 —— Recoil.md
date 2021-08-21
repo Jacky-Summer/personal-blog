@@ -18,28 +18,6 @@ Redux、Mobx 本身并不是 React 库，我们是借助这些库的能力来实
 
 并且，它们并不能访问 React 内部的调度程序，而 Recoil 在后台使用 React 本身的状态，在未来还能提供并发模式这样的能力
 
-## Recoil 是什么
-
-Facebook 的软件工程师做过这样一个演讲分享
-
-更新 List 里面第二个节点，然后希望 Canvas 的第二个节点也跟着更新。
-
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dffdc9d70f13441ea709b3451c7ebaf2~tplv-k3u1fbpfcp-watermark.image)
-
-最古老的方式就是通过共同父子组件通信，但父组件下面的子组件都会更新，这种情况下一般使用  `memo`  或者  `PureComponent`。
-
-还可以使用 React 自带的 Context API，将状态从父组件传给子组件。
-
-但这样带来的问题就是如果我们共享的状态越多就需要越多的 Provider，层层嵌套。
-
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9e40f5a99a2541bd9bc925c409d8c079~tplv-k3u1fbpfcp-watermark.image)
-
-那是否有一种可以精准更新节点，同时又不需要嵌套太多层级的方案呢？它就是 Recoil。通过创建正交的 tree，将每个 state 和组件对应起来，从而实现精准更新。
-
-Recoil 将这些 state 称之为 Atom（英文翻译为原子），顾名思义，Atom 是 Recoil 里面最小的数据单元，它支持更新和订阅。
-
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02ae6efc1a48498289dd84db8d3c603d~tplv-k3u1fbpfcp-watermark.image)
-
 ## 使用
 
 先来看看 Recoil 是怎么使用的
