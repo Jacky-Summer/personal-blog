@@ -150,4 +150,4 @@ axios({
 
 ## 效果
 
-![](https://user-gold-cdn.xitu.io/2020/3/29/17126d31a0fc0571?w=1854&h=954&f=gif&s=427836)
+![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/3/29/17126d31a0fc0571~tplv-t2oaga2asx-watermark.awebp)
