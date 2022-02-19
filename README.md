@@ -104,6 +104,7 @@
 ## 性能优化
 
 1. [Webpack 动态导入 react-toastify](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/Webpack%20%E5%8A%A8%E6%80%81%E5%AF%BC%E5%85%A5%20react-toastify.md)
+2. [浅析 Chrome Devtools 的 Performance 面板](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%B5%85%E6%9E%90%20Chrome%20Devtools%20%E7%9A%84%20Performance%20%E9%9D%A2%E6%9D%BF.md)
 
 ## HTTP 系列
 
