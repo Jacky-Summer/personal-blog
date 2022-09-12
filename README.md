@@ -142,10 +142,6 @@
 2. [vue-awesome-swiper 修改轮播图 pagination 的颜色](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/%E6%8F%92%E4%BB%B6%E7%B3%BB%E5%88%97/vue-awesome-swiper%E4%BF%AE%E6%94%B9%E8%BD%AE%E6%92%AD%E5%9B%BEpagination%E7%9A%84%E9%A2%9C%E8%89%B2.md)
 3. [swiper 父级元素处于隐藏状态滚动效果失效问题](https://github.com/Jacky-Summer/personal-blog/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/%E6%8F%92%E4%BB%B6%E7%B3%BB%E5%88%97/swiper%E7%88%B6%E7%BA%A7%E5%85%83%E7%B4%A0%E5%A4%84%E4%BA%8E%E9%9A%90%E8%97%8F%E7%8A%B6%E6%80%81%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98.md)
 
-## jQuery 系列
-
-1. [解读 jquery 核心源码部分](https://github.com/Jacky-Summer/personal-blog/blob/master/jQuery%E7%B3%BB%E5%88%97/%E8%A7%A3%E8%AF%BBjquery%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81%E9%83%A8%E5%88%86.md)
-
 ## 后语
 
 如果喜欢或者有所启发，欢迎 star，你的鼓励是我持续创作的动力 😊
