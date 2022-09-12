@@ -1,6 +1,4 @@
----
-theme: channing-cyan
----
+# 升级 React Router v6 指南
 
 ## 前言
 
