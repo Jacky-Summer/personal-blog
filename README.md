@@ -67,6 +67,7 @@
 15. [浅谈对 React Fiber 的理解](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%B5%85%E8%B0%88%E5%AF%B9%20React%20Fiber%20%E7%9A%84%E7%90%86%E8%A7%A3.md)
 16. [浅析 requestIdleCallback](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%B5%85%E6%9E%90%20requestIdleCallback.md)
 17. [React 的状态管理库 —— Recoil](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/React%20%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86%E5%BA%93%20%E2%80%94%E2%80%94%20Recoil.md)
+18. [升级 React Router v6 指南](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E5%8D%87%E7%BA%A7%20React%20Router%20v6%20%E6%8C%87%E5%8D%97.md)
 
 ## Vue 系列
 
