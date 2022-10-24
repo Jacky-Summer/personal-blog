@@ -68,6 +68,7 @@
 16. [浅析 requestIdleCallback](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E6%B5%85%E6%9E%90%20requestIdleCallback.md)
 17. [React 的状态管理库 —— Recoil](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/React%20%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86%E5%BA%93%20%E2%80%94%E2%80%94%20Recoil.md)
 18. [升级 React Router v6 指南](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E5%8D%87%E7%BA%A7%20React%20Router%20v6%20%E6%8C%87%E5%8D%97.md)
+19. [一文解读 React 17 与 React 18 的更新变化](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E4%B8%80%E6%96%87%E8%A7%A3%E8%AF%BB%20React%2017%20%E4%B8%8E%20React%2018%20%E7%9A%84%E6%9B%B4%E6%96%B0%E5%8F%98%E5%8C%96.md)
 
 ## Vue 系列
 
