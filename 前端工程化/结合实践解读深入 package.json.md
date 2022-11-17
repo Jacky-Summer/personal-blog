@@ -840,7 +840,13 @@ main 字段里指定的入口文件在 browser 和 node 环境中都可以使用
 }
 ```
 
-- `pnpm` 同样也是使用 `overrides` 字段
+- `pnpm` 需要使用字段：
+```json
+"pnpm": {
+    "overrides": {
+    }
+  },
+```
 - `yarn` 需要使用 `resolution` 字段
 
 更多可了解： [前端依赖版本重写指南](https://developer.aliyun.com/article/1050105)
