@@ -112,6 +112,7 @@
 1. [Webpack 动态导入 react-toastify](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/Webpack%20%E5%8A%A8%E6%80%81%E5%AF%BC%E5%85%A5%20react-toastify.md)
 2. [浅析 Chrome Devtools 的 Performance 面板](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%B5%85%E6%9E%90%20Chrome%20Devtools%20%E7%9A%84%20Performance%20%E9%9D%A2%E6%9D%BF.md)
 3. [我的前端性能优化体系总结](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%88%91%E7%9A%84%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93.md)
+4. [梳理 Web Worker 及实战场景](https://github.com/Jacky-Summer/personal-blog/blob/master/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%A2%B3%E7%90%86%20Web%20Worker%20%E5%8F%8A%E5%AE%9E%E6%88%98%E5%9C%BA%E6%99%AF.md)
 
 ## HTTP 系列
 
