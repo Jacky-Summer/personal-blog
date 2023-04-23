@@ -69,6 +69,24 @@
 17. [React 的状态管理库 —— Recoil](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/React%20%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86%E5%BA%93%20%E2%80%94%E2%80%94%20Recoil.md)
 18. [升级 React Router v6 指南](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E5%8D%87%E7%BA%A7%20React%20Router%20v6%20%E6%8C%87%E5%8D%97.md)
 19. [一文解读 React 17 与 React 18 的更新变化](https://github.com/Jacky-Summer/personal-blog/blob/master/React%E7%B3%BB%E5%88%97/%E4%B8%80%E6%96%87%E8%A7%A3%E8%AF%BB%20React%2017%20%E4%B8%8E%20React%2018%20%E7%9A%84%E6%9B%B4%E6%96%B0%E5%8F%98%E5%8C%96.md)
+20. [深入 React Context 源码与实现原理](https://juejin.cn/post/7213752661761523772)
+21. [深入 React 合成事件机制源码与原理](https://juejin.cn/post/7216338005888352293)
+22. [深入 React 源码 render 阶段的 beginWork 流程](https://juejin.cn/post/7218961155900555321)
+23. [深入 React 源码 render 阶段的 completeWork 流程](https://juejin.cn/post/7221186557729374264)
+
+## 解读 ahooks 源码系列
+
+1. [【解读 ahooks 源码系列】（开篇）如何获取和监听 DOM 元素](https://juejin.cn/post/7201889983170592824)
+2. [【解读 ahooks 源码系列】DOM 篇（一）](https://juejin.cn/post/7202254039215800375)
+3. [【解读 ahooks 源码系列】DOM 篇（二）](https://juejin.cn/post/7202633255043465271)
+4. [【解读 ahooks 源码系列】DOM 篇（三）](https://juejin.cn/post/7202996870251380791)
+5. [【解读 ahooks 源码系列】DOM 篇（四）](https://juejin.cn/post/7203397626527891515)
+6. [【解读 ahooks 源码系列】Dev 篇——useTrackedEffect 和 useWhyDidYouUpdate](https://juejin.cn/post/7204683121374232635)
+7. [【解读 ahooks 源码系列】Advanced 篇](https://juejin.cn/post/7207810396420669477)
+8. [【解读 ahooks 源码系列】State 篇（一）](https://juejin.cn/post/7210786286570324025)
+9. [【解读 ahooks 源码系列】State 篇（二）](https://juejin.cn/post/7212263304395620408)
+10. [【解读 ahooks 源码系列】Effect 篇（一）](https://juejin.cn/post/7214858677173715001)
+11. [【解读 ahooks 源码系列】Effect 篇（二）](https://juejin.cn/post/7217851001087836221)
 
 ## Vue 系列
 
