@@ -12,9 +12,9 @@
 
 ## 🎉 我的技术社区
 
-- [个人博客](https://jacky-summer.github.io/)
-- [掘金主页](https://juejin.im/user/5d77c17bf265da03c61e7c24)
+- [掘金主页](https://juejin.cn/user/1257497033714477/posts)
 - [segmentfault 主页](https://segmentfault.com/u/jackysummer/articles)
+- ~~[个人博客](https://jacky-summer.github.io/)~~
 
 ## 深入理解 JavaScript 系列目录
 
